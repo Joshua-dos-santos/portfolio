@@ -18,20 +18,14 @@ const SkillsProjects = () => {
   const projects = [
     {
       name: "Portfolio",
-      description: "Mijn persoonlijke portfolio",
-      link: "#",
+      description: "My portfolio website",
+      link: "https://joshuadossantos.netlify.app/",
       icon: faLaptopCode,
-    },
-    {
-      name: "E-commerce",
-      description: "Winkelwebsite met React",
-      link: "#",
-      icon: faLaptopCode,
-    },
+    }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-8 pt-16">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white p-8 pt-16">
       <h2 className="text-4xl font-bold text-center mb-6">Skills</h2>
       <div className="grid grid-cols-2 gap-8 mb-12">
         <div>

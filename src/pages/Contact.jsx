@@ -3,7 +3,7 @@ import { faInstagram, faLinkedin, faFacebook } from "@fortawesome/free-brands-sv
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-8">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white flex flex-col items-center justify-center p-8">
       <div className="w-full max-w-lg bg-gray-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold mb-6 text-center">Contact me</h2>
         <form className="space-y-6">
