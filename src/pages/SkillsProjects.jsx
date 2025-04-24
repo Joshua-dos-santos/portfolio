@@ -25,7 +25,7 @@ const SkillsProjects = () => {
   ];
 
   return (
-    <div className="pt-28 min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white px-4 sm:px-6 lg:px-20 py-16">
+    <div className="quantico-regular pt-28 min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white px-4 sm:px-6 lg:px-20 py-16">
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Skills</h2>
 
       {/* Skills Section */}

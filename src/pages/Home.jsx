@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white flex items-center justify-center overflow-hidden px-4 py-12">
+    <div className="quantico-regular min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white flex items-center justify-center overflow-hidden px-4 py-12">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 sm:gap-12 max-w-7xl w-full px-4 sm:px-8 lg:px-16 xl:px-24 animate-fade-in">
 
         {/* Cartoon Avatar */}

@@ -3,7 +3,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="pt-28 min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white flex flex-col items-center px-4 sm:px-6 lg:px-20 pb-16">
+    <div className="quantico-regular pt-28 min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white flex flex-col items-center px-4 sm:px-6 lg:px-20 pb-16">
       
       {/* Contact Form */}
       <div className="w-full max-w-md sm:max-w-lg bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg">
