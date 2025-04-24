@@ -1,12 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white flex flex-col items-center justify-center p-8">
-      <div className="w-full max-w-lg bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h2 className="text-3xl font-bold mb-6 text-center">Contact me</h2>
+    <div className="pt-28 min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white flex flex-col items-center px-4 sm:px-6 lg:px-20 pb-16">
+      
+      {/* Contact Form */}
+      <div className="w-full max-w-md sm:max-w-lg bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">Contact me</h2>
         <form className="space-y-6">
+          
           {/* Naam */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-1">
@@ -49,7 +52,7 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          {/* Submit */}
+          {/* Submit Button */}
           <button
             type="submit"
             className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors duration-300"

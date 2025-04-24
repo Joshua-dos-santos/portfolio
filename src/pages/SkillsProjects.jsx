@@ -25,9 +25,11 @@ const SkillsProjects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white p-8 pt-16">
-      <h2 className="text-4xl font-bold text-center mb-6">Skills</h2>
-      <div className="grid grid-cols-2 gap-8 mb-12">
+    <div className="pt-28 min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white px-4 sm:px-6 lg:px-20 py-16">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Skills</h2>
+
+      {/* Skills Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
         <div>
           <h3 className="text-2xl font-semibold mb-4">Languages</h3>
           <ul className="space-y-4">
@@ -52,17 +54,23 @@ const SkillsProjects = () => {
         </div>
       </div>
 
-      <h2 className="text-4xl font-bold text-center mb-6">Projects</h2>
-      <ul className="space-y-4">
+      {/* Projects Section */}
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Projects</h2>
+      <ul className="space-y-6 max-w-3xl mx-auto">
         {projects.map((project, index) => (
-          <li key={index} className="bg-gray-800 p-4 rounded shadow-md">
-            <div className="flex items-center space-x-3">
+          <li key={index} className="bg-gray-800 p-6 rounded shadow-md">
+            <div className="flex items-center space-x-4 mb-2">
               <FontAwesomeIcon icon={project.icon} className="text-yellow-500 text-xl" />
               <h3 className="text-xl font-semibold">{project.name}</h3>
             </div>
-            <p className="text-gray-300">{project.description}</p>
-            <a href={project.link} className="text-blue-400 hover:text-blue-300">
-              Bekijk project
+            <p className="text-gray-300 mb-2">{project.description}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              Bekijk project →
             </a>
           </li>
         ))}
