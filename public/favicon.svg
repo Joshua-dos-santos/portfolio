@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"></stop>
+      <stop offset="100%" stop-color="#1e293b"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="10" fill="url(#bg3)"></rect>
+  <!-- gekleurde verschuivingen -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="Major Mono Display, monospace" font-size="28" fill="#f43f5e" transform="translate(-1,0)">JDS</text>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="Major Mono Display, monospace" font-size="28" fill="#22d3ee" transform="translate(1,0)">JDS</text>
+  <!-- bovenop -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="Major Mono Display, monospace" font-size="28" fill="#ffffff">
+    JDS
+  </text>
+</svg>
