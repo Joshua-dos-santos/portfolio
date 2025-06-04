@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faLaptopCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const SkillsProjects = () => {
   const programmingLanguages = [
@@ -18,9 +18,18 @@ const SkillsProjects = () => {
   const projects = [
     {
       name: "Portfolio",
-      description: "My portfolio website",
+      description: "Mijn portfolio website",
       link: "https://joshuadossantos.netlify.app/",
       icon: faLaptopCode,
+    },
+  ];
+
+  const basicWebsites = [
+    {
+      name: "Maestro Caribbean Kitchen",
+      description: "Website voor een cateringsbedrijf",
+      link: "https://maestro-caribbean-kitchen.nl/",
+      icon: faGlobe,
     }
   ];
 
@@ -56,7 +65,7 @@ const SkillsProjects = () => {
 
       {/* Projects Section */}
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Projects</h2>
-      <ul className="space-y-6 max-w-3xl mx-auto">
+      <ul className="space-y-6 max-w-3xl mx-auto mb-16">
         {projects.map((project, index) => (
           <li key={index} className="bg-gray-800 p-6 rounded shadow-md">
             <div className="flex items-center space-x-4 mb-2">
@@ -71,6 +80,28 @@ const SkillsProjects = () => {
               className="text-blue-400 hover:text-blue-300 transition-colors"
             >
               Bekijk project →
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      {/* Basic Websites Section */}
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Websites (HTML/CSS/JS)</h2>
+      <ul className="space-y-6 max-w-3xl mx-auto">
+        {basicWebsites.map((site, index) => (
+          <li key={index} className="bg-gray-800 p-6 rounded shadow-md">
+            <div className="flex items-center space-x-4 mb-2">
+              <FontAwesomeIcon icon={site.icon} className="text-purple-500 text-xl" />
+              <h3 className="text-xl font-semibold">{site.name}</h3>
+            </div>
+            <p className="text-gray-300 mb-2">{site.description}</p>
+            <a
+              href={site.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              Bekijk website →
             </a>
           </li>
         ))}
